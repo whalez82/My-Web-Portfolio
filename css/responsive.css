@@ -1,0 +1,410 @@
+/* large smart phone */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+  .hero .contentBx h1 {
+    font-size: 5em;
+  }
+  .greeting .contentBx {
+    padding: 30px 80px;
+  }
+  .greeting .contentBx h2 {
+    font-size: 1.3em;
+  }
+  .greeting .contentBx p {
+    font-size: 0.9em;
+  }
+}
+/* Tablet size */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+  section {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  header {
+    padding: 30px;
+  }
+  .navbar.active {
+    height: calc(100% - 108px);
+    top: 108px;
+  }
+  .logo {
+    font-size: 1.8em;
+  }
+  .titleBx h2 {
+    font-size: 1.5em;
+  }
+  .titleBx h3 {
+    font-size: 3em;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 15px 50px;
+    font-size: 1em;
+  }
+  /*Hero Section*/
+  .hero .contentBx {
+    grid-column: 1 / 9;
+    padding: 60px;
+  }
+  .hero .contentBx h1 {
+    font-size: 6em;
+  }
+  .hero .contentBx p {
+    font-size: 1.8em;
+  }
+  /* Greeting section style */
+  .greeting .contentBx {
+    grid-column: 2 /8;
+  }
+  .greeting .contentBx h2 {
+    font-size: 2.2em;
+  }
+  .greeting .contentBx p {
+    font-size: 1.3em;
+  }
+  /* about section style */
+
+  .about .contentBx {
+    grid-area: 1 / 1 / 2 / 9;
+    padding: 6vw;
+  }
+  .about .contentBx .text {
+    font-size: 1.5em;
+    line-height: 150%;
+  }
+  .about .imgBx {
+    grid-area: 2 / 1 / 3 / 9;
+    padding: 6vw;
+  }
+  .about .imgBx img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .about .imgBx .textBx {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .imgBx .text2 {
+    font-size: 1.4em;
+  }
+  .about .imgBx .btn {
+    width: 25%;
+    text-align: center;
+  }
+
+  /* Service section style */
+  .service {
+    grid-template-rows: minmax(80px, auto) 1fr;
+  }
+  .service .titleBx {
+    grid-area: 1 / 1 / 3 / 5;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--primary);
+    padding: 6vw;
+  }
+  .service .contentBx {
+    grid-area: 1 / 5 / 3 / 9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(80px, auto));
+  }
+  .service .contentBx div {
+    border-left: 1px solid var(--primary);
+  }
+  .service .contentBx .design {
+    border-top: none;
+  }
+  .service .contentBx p {
+    border-left: var(--border);
+  }
+
+  /* Skills section style */
+  .skills {
+    grid-template-rows: minmax(80px, auto) 1fr;
+  }
+  .skills .titleBx {
+    padding: 6vw;
+  }
+  .skills .imgBx {
+    grid-area: 2 / 1 / 3 / 9;
+  }
+  /* Portfolio section style */
+  .portfolio .titleBx {
+    padding: 6vw;
+    grid-area: 1 / 1 / 1 / 9;
+  }
+  .portfolio .contentBx {
+    grid-area: 2 / 1 / 3 / 9;
+  }
+  /* More works section style */
+  .more-works .titleBx {
+    grid-area: 1 / 1 / 1 / 9;
+  }
+  .more-works .imgBx {
+    grid-area: 2 / 1 / 3 / 9;
+  }
+  /**Contact section style */
+  .contact {
+    grid-template-rows: minmax(80px, auto) 1fr;
+    place-items: center;
+  }
+  .contact .form {
+    padding: 6vw;
+    grid-area: 1 / 1 / 1 / 9;
+  }
+  footer {
+    justify-content: space-between;
+  }
+}
+/* Desktop size */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .titleBx h2 {
+    font-size: 1.8em;
+  }
+  .titleBx h3 {
+    font-size: 3em;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 12px 50px;
+    font-size: 1.1em;
+  }
+  /* Header section */
+  header {
+    padding: 30px 60px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar li {
+    margin-left: 30px;
+  }
+  .navbar li a {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: var(--primary);
+    transition: all ease 0.5s;
+  }
+  .navbar li a:hover {
+    color: var(--highlight);
+    letter-spacing: 2px;
+  }
+  .hamburger {
+    display: none;
+  }
+  /*Hero Section*/
+  .hero .contentBx {
+    grid-column: 1 / 13;
+    padding: 60px;
+  }
+  .hero .contentBx h1 {
+    font-size: 5em;
+  }
+  .hero .contentBx p {
+    font-size: 1.6em;
+  }
+  /* Greeting section style */
+  .greeting {
+    min-height: 30vh;
+  }
+  .greeting .contentBx {
+    grid-area: 1 / 4 / 2 / 10;
+  }
+  .greeting .contentBx h2 {
+    font-size: 2vw;
+  }
+  .greeting .contentBx p {
+    font-size: 1.3vw;
+  }
+  /*About section style */
+  .about .contentBx {
+    grid-area: 1 / 1 / 2 / 10;
+    padding: 6vw;
+  }
+  .about .contentBx .text {
+    font-size: 1.6em;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+  .about .contentBx .btn {
+    position: absolute;
+    bottom: 25px;
+  }
+  .about .imgBx {
+    grid-area: 2 / 1 / 3 / 13;
+    padding: 6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about .imgBx img,
+  .about .imgBx .textBx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about .imgBx img {
+    grid-column: 1;
+    margin: auto 0;
+  }
+  .about .imgBx .textBx {
+    grid-column: 2;
+    margin: 0 30px;
+    justify-content: end;
+  }
+  .about .imgBx .text {
+    font-size: 1.2em;
+  }
+
+  /* Service section style */
+  .service {
+    min-height: 60vh;
+    border-bottom: 1px solid var(--primary);
+    padding: 0 80px 30px;
+  }
+  .service .titleBx {
+    grid-area: 1 / 1 / 1 / 13;
+  }
+  .service .contentBx {
+    grid-area: 2 / 1 / 3 / 13;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(400px, auto);
+    padding: 2vw;
+  }
+  .service .contentBx .design {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+  .service .contentBx .development {
+    grid-area: 1 / 3 / 1 / 5;
+  }
+  .service .contentBx .writing {
+    grid-area: 1 / 5 / 1 / 7;
+  }
+  .service .contentBx div h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  .service .contentBx div p {
+    font-size: 1.3em;
+  }
+  .service .contentBx div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary);
+    min-height: 350px;
+  }
+  .accordian .item img {
+    width: 20%;
+    margin: 20px 0;
+  }
+  /* Skills section style */
+  .skills .titleBx {
+    padding: 6vw;
+    grid-area: 1 / 1 / 1 / 13;
+  }
+  .skills .imgBx {
+    grid-area: 2 / 2 / 3 / 12;
+  }
+  /* Porfolio section style */
+  .portfolio .titleBx {
+    padding: 6vw;
+    grid-area: 1 / 1 / 1 / 13;
+  }
+  .portfolio .contentBx {
+    grid-area: 2 / 1 / 3 / 13;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "work1 work2"
+      "work3 work4";
+  }
+  .portfolio .work1,
+  .portfolio .work3 {
+    border-right: var(--border);
+  }
+  .work1 {
+    grid-area: work1;
+  }
+  .work2 {
+    grid-area: work2;
+    border-top: var(--border);
+  }
+  /* More works section style */
+  .more-works {
+    min-height: 70vh;
+  }
+  .more-works .titleBx {
+    padding: 6vw;
+    grid-area: 1 / 1 / 1 / 13;
+  }
+  .more-works .imgBx {
+    grid-area: 2 / 1 / 3 / 13;
+  }
+  /**Contact section style */
+  .contact {
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .contact .form {
+    padding: 4vw 0;
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 1 / 7;
+  }
+  .contact .titleBx {
+    align-items: flex-start;
+    padding: 0 5vw 2vw;
+  }
+  .contact .imgBx {
+    grid-area: 1 / 7 / 1 / 13;
+    background: url(../images/wiring.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-top: var(--border);
+    border-left: var(--border);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar li {
+    margin-left: 40px;
+  }
+  .hero .contentBx {
+    grid-column: 1 / 13;
+  }
+  .hero .contentBx h1 {
+    font-size: 8em;
+  }
+  .hero .contentBx p {
+    font-size: 2em;
+  }
+  /*About section*/
+  .about .imgBx .text {
+    font-size: 1.4em;
+  }
+  /*SErvices section*/
+  .service {
+    min-height: 70vh;
+    border-bottom: 1px solid var(--primary);
+  }
+  .service .contentBx div {
+    min-height: 400px;
+  }
+}
